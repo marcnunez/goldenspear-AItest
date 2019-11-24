@@ -15,17 +15,17 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
 
 
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
-> Se han quitado los numeros y los caracteres especiales, ademas de la puntuacion. Y una vez tokenizado el texto se han quitado los stop words. Ademas tambien se podria haber Lemmatizing para encontrar la palabra raiz y asi facilitar el agrupamiento de las palabras. Para esta tarea se han utilizado las librerias de Python de NLTK y de String
+> Numbers and special characters have been removed, in addition to the punctuation. And once the text has been tokenized, the stop words have been removed. In addition there could also be a lemmatization process to find the root word and thus facilitate the grouping of words. The Python libraries of NLTK and String have been used for this task.
 3. **Learning process.** Answer briefly these questions:
    - What kind of features have you used?
-   > Se ha propuesto representar las frases mediante matrices de contadores de tokens. Despues se han nomralizado a una representacion tf-idf
+   > It has been proposed to represent the phrases using token counter matrices. Then transform a count matrix to a normalized tf-idf representation 
    - What model or models have you chosen? Why? 
-   > Se han provado Linear SVM's, Logistics Regression, y Naive Bayes Classifier.
+   >Linear SVM's, Logistics Regression, and Naive Bayes Classifier has been tested. Since they are fast and simples and need less effort with good results.
    - What libraries have you used?
    > Pre-Processing and cleaning of lenguage: NLTK and String. Descriptors: Pandas and Numpy. Models: Scikit-learn
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
-   > 
+   > Cross Validation method has been implemented, with 70% of the data of train and 30% for testing. 
    - What evaluation metric have you chosen?
    > Acuracy, precision, recall and F1-Score
    - Write down your training and testing accuracies.
