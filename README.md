@@ -32,6 +32,14 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 > /src/blue_shirts_detector.py
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > Una manera de visualizar los resultados sin tener validacion, puede ser con la comprovacion visual de grids de imagenes pequeñas de esos en los que ha acertado. Siendo el dataset mas reducido, podria ser una manera sencialla de comprovar que no haya Falsos Positivos. 
+
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG)
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG)
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/401_500_blue.PNG)
+![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/501_600_blue.PNG)
+
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
 > La version implementada con la comparacion de histogramas es sencilla y eficiente, sin embargo mecanismos de Machine Learning o de Deep Learnign pueden hacer que incremente su eficacia. 
 Por un lado se puede implementar con una cantidad de datos similares metodos de clustering semi-supervisado, donde haciendo uso de librerias de Sklearn se puede implementar un clustering como el Mean-Shift, de tal modo en que aprendiesea diferenciar entre clusters de histogramas  automaticamente del dataset completo sin necesidad de indicar el numero de clases existentes, y luego con el dataset de camisetas azules, identificar esas regiones de puntos que pertenecen al cluster objetivo. Se pueden utilizar las mismas features de entrada que el ejercicio propuesto. Unos histogramas de las Regions of Interest del canal Hue del espacio de color HSV.
