@@ -54,7 +54,7 @@ We would like you to analyse the datasets and build a model that is able to retr
 - The results have been plotted
 
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
-> A way to visualize the results without having validation, can be with the visual check of grids of small images of those in which it has succeeded. Being the smallest dataset, it could be a simple way to check that there are no False Positives. 
+> Since the dataser is not too large, a simple way to check that there are no False Positives is plotting the results in grids. The small images can be checked at a glance and we can visually determine if they really correspond to blue shirts.
 
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
