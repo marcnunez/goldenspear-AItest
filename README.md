@@ -3,41 +3,43 @@
 ## 1st problem.
 We are given a dataset that contains product reviews and a rating for each product. A product can be rated from one to five. Clearly, the review is highly correlated with the final score that the users give to the product. The dataset provided contains 10K samples. We would like you to analyse the dataset and build a model that is able to predict from a given review its score. For this purpose, the use of open source libraries is encouraged.
 
-You can download the dataset from http://app.goldenspear.com/ratings.csv
-
 1. **Data analysis.** Plot the balance of classes and show the five most predominant words for each class.
 
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-1.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-2.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-3.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-4.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-1.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-2.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-3.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-4.png)
 
 
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
-> Se han quitado los numeros y los caracteres especiales, ademas de la puntuacion. Y una vez tokenizado el texto se han quitado los stop words. Ademas tambien se podria haber Lemmatizing para encontrar la palabra raiz y asi facilitar el agrupamiento de las palabras. Para esta tarea se han utilizado las librerias de Python de NLTK y de String
+   To perfomr data cleaning the following steps has been used: 
+   - Remove numbers and special caracters
+   - Tokenize the text
+   - Remove stop words such as "and", "the", etc, using the python library NLTK
+
+   In addition there could also be a lemmatization process to find the root word and thus facilitate the grouping of words.
+   
 3. **Learning process.** Answer briefly these questions:
    - What kind of features have you used?
-   > Se ha propuesto representar las frases mediante matrices de contadores de tokens. Despues se han nomralizado a una representacion tf-idf
+   > It has been proposed to represent the phrases using token counter matrices. Then transform a count matrix to a normalized tf-idf representation 
    - What model or models have you chosen? Why? 
-   > Se han provado Linear SVM's, Logistics Regression, y Naive Bayes Classifier.
+   > Linear SVM's, Logistics Regression, and Naive Bayes Classifier has been tested. Since they are fast, simples and need less effort with good results.
    - What libraries have you used?
-   > Pre-Processing and cleaning of lenguage: NLTK and String. Descriptors: Pandas and Numpy. Models: Scikit-learn
+   > Pre-Processing and cleaning of lenguage: NLTK. Data structures: Pandas and Numpy. Models and descirptors: Scikit-learn
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
-   > 
+   > Cross Validation method has been implemented. The data has been split into training and testing sets, with 70% and 30% of the data respectively, keeping the data classes balanced for each set as shown in question 1.
    - What evaluation metric have you chosen?
    > Acuracy, precision, recall and F1-Score
    - Write down your training and testing accuracies.
    ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/models.PNG)
-
-5. **Final summary.** Write down what would you have done if we had given you more time and data.        
-
+5. **Final summary.** Write down what would you have done if we had given you more time and data.
+    > I would use deep learning networks such as BERT, a transformer widely used nowadays in the NLP community, which has several pretrained models available and can be easily fine tuned for a wide variety of NLP tasks.
+    
 ## 2nd problem. 
 We are given a dataset that contains an unlabelled set of images and a smaller dataset that contains labelled images. Those images represent shirts from an e-commerce, so usually the background is plain and the product is the focus of the image. The unlabelled dataset provided contains 5K samples and the labelled one contains just 10 images, all of blue shirts. 
 We would like you to analyse the datasets and build a model that is able to retrieve all the blue shirts from the 5K dataset. For this purpose, the use of open source libraries is encouraged.
-
-You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 
 1. **Problem analysis.** Write down your solution proposal .
 
