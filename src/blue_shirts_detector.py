@@ -1,7 +1,5 @@
 import os
 import matplotlib.pyplot as plt
-from matplotlib import gridspec
-
 from src import memory
 import cv2
 import numpy as np

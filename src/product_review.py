@@ -1,10 +1,5 @@
 import string
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
-from sklearn.linear_model import SGDClassifier
-from sklearn.metrics import accuracy_score, classification_report
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline
 
 from src import memory
 from nltk.tokenize import RegexpTokenizer
