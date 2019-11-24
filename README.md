@@ -7,11 +7,11 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
 
 1. **Data analysis.** Plot the balance of classes and show the five most predominant words for each class.
 
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-1.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-2.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-3.PNG)
-   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-4.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-1.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-2.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-3.png)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-4.png)
 
 
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
