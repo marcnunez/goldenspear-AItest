@@ -7,6 +7,7 @@ We are given a dataset that contains product reviews and a rating for each produ
 
    > The balance of the clases are shown in the following barplot:
    ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/balanced.png)
+
    
    > Top 5 words for each class
    ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.png)
