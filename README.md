@@ -13,7 +13,11 @@ We are given a dataset that contains product reviews and a rating for each produ
 
 
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
-> Numbers and special characters have been removed, in addition to the punctuation. And once the text has been tokenized, the stop words have been removed. In addition there could also be a lemmatization process to find the root word and thus facilitate the grouping of words. The Python libraries of NLTK and String have been used for this task.
+   - Remove numbers and special caracters
+   - Tokenize the text
+   - Remove stop words such as "and", "the"
+   The Python libraries of NLTK and String have been used for this task.
+   In addition there could also be a lemmatization process to find the root word and thus facilitate the grouping of words.
 3. **Learning process.** Answer briefly these questions:
    - What kind of features have you used?
    > It has been proposed to represent the phrases using token counter matrices. Then transform a count matrix to a normalized tf-idf representation 
