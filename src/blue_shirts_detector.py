@@ -53,6 +53,7 @@ def ploting_blue_shirts(path: str, list_blue_shirts):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         ax = fig.add_subplot(rows, columns, counter)
         #ax.title.set_text(path_img)
+        plt.subplots_adjust(wspace=0, hspace=0, left=0, right=1, bottom=0, top=1)
         plt.imshow(img)
         plt.axis('off')
         if counter == (columns*rows):
