@@ -36,12 +36,10 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > Una manera de visualizar los resultados sin tener validacion, puede ser con la comprovacion visual de grids de imagenes pequeñas de esos en los que ha acertado. Siendo el dataset mas reducido, podria ser una manera sencialla de comprovar que no haya Falsos Positivos. 
 
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG)
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG)
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/401_500_blue.PNG)
-![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/501_600_blue.PNG)
+![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
+![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
+![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/401_500_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/501_600_blue.PNG)
+
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
 > La version implementada con la comparacion de histogramas es sencilla y eficiente, sin embargo mecanismos de Machine Learning o de Deep Learnign pueden hacer que incremente su eficacia. 
