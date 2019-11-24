@@ -34,14 +34,14 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 1. **Problem analysis.** Write down your solution proposal .
 
 > /src/blue_shirts_detector.py
-   Se han sacado regiones de interes. 
-   Se han pasado esas regiones a espacio de color HSV y se ha seleccionado unicamente el canal Hue
-   Se ha sacado el histograma de las imagenes de color azul. 
-   Se han comparado los histogramas de cada una de las imagenes de train con cada una de las imagenes de camisetas azules. Si tiene un intersect superior a 2100 se ha considerado azul. 
-   Se han ploteado los resultados
+   1. Regions of interest have been taken out. 
+   2. These regions have been switched to HSV colour space and only the Hue channel has been selected.
+   3. The histogram has been taken from the blue images. 
+   4. It has been compared the histograms of each one of the images of train with each one of the images of blue shirts. If it has an intersect superior to 2100 it has been considered blue. 
+   5. The results have been plotted
 
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
-> Una manera de visualizar los resultados sin tener validacion, puede ser con la comprovacion visual de grids de imagenes pequeñas de esos en los que ha acertado. Siendo el dataset mas reducido, podria ser una manera sencialla de comprovar que no haya Falsos Positivos. 
+> A way to visualize the results without having validation, can be with the visual check of grids of small images of those in which it has succeeded. Being the smallest dataset, it could be a simple way to check that there are no False Positives. 
 
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
@@ -49,8 +49,8 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
-> La version implementada con la comparacion de histogramas es sencilla y eficiente, sin embargo mecanismos de Machine Learning o de Deep Learnign pueden hacer que incremente su eficacia. 
-Por un lado se puede implementar con una cantidad de datos similares metodos de clustering semi-supervisado, donde haciendo uso de librerias de Sklearn se puede implementar un clustering como el Mean-Shift, de tal modo en que aprendiesea diferenciar entre clusters de histogramas  automaticamente del dataset completo sin necesidad de indicar el numero de clases existentes, y luego con el dataset de camisetas azules, identificar esas regiones de puntos que pertenecen al cluster objetivo. Se pueden utilizar las mismas features de entrada que el ejercicio propuesto. Unos histogramas de las Regions of Interest del canal Hue del espacio de color HSV.
-Por otro lado si se disponiera de mas dataset de imagenes azules se podria entrenar una CNN con los embedings de las imagenes de entrada 
+> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learnign can make it increase its effectiveness. 
+On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Sklearn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue T-shirt dataset, to identify those regions of points that belong to the target cluster. You can use the same input features as the proposed exercise. Histograms of the Regions of Interest of the Hue channel of the HSV color space.
+On the other hand, if more blue image datasets were available, it would be possible to train a CNN with the embedings of the input images. 
 
 
