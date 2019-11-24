@@ -29,7 +29,7 @@ We are given a dataset that contains product reviews and a rating for each produ
    > Pre-Processing and cleaning of lenguage: NLTK. Data structures: Pandas and Numpy. Models and descirptors: Scikit-learn
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
-   > Cross Validation method has been implemented, with 70% of the data of train and 30% for testing. 
+   > Cross Validation method has been implemented, the data has been split with a traing and testing set of 70-30 keeping each of the classes in the splits balanced
    - What evaluation metric have you chosen?
    > Acuracy, precision, recall and F1-Score
    - Write down your training and testing accuracies.
