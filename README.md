@@ -8,13 +8,13 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
 1. **Data analysis.** Plot the balance of classes and show the five most predominant words for each class.
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
 3. **Learning process.** Answer briefly these questions:
-   A. What kind of features have you used?
-   B. What model or models have you chosen? Why? 
-   C. What libraries have you used?
+   - What kind of features have you used?
+   - What model or models have you chosen? Why? 
+   - What libraries have you used?
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
-   A. What validation method have you chosen? 
-   B. What evaluation metric have you chosen? 
-   C. Write down your training and testing accuracies.
+   - What validation method have you chosen? 
+   - What evaluation metric have you chosen? 
+   - Write down your training and testing accuracies.
 5. **Final summary.** Write down what would you have done if we had given you more time and data.        
 
 ## 2nd problem. 
