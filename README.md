@@ -10,16 +10,19 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
 > Se han quitado los numeros y los caracteres especiales, ademas de la puntuacion. Y una vez tokenizado el texto se han quitado los stop words. Ademas tambien se podria haber Lemmatizing para encontrar la palabra raiz y asi facilitar el agrupamiento de las palabras. Para esta tarea se han utilizado las librerias de Python de NLTK y de String
 3. **Learning process.** Answer briefly these questions:
    - What kind of features have you used?
-   > Se ha propuesto representar los tokens de las frases mediante one hot shot encodings. 
+   > Se ha propuesto representar las frases mediante matrices de contadores de tokens. Despues se han nomralizado a una representacion tf-idf
    - What model or models have you chosen? Why? 
-   > Se han provado SVM's entre otros
+   > Se han provado Linear SVM's, Logistics Regression, y Naive Bayes Classifier.
    - What libraries have you used?
-   > Mayormente Sklearn 
+   > Python Pandas y numpy para representar la data y Sklearn para los modelos y la validacion. 
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
-   > Sobretodo Cross Validation
-   - What evaluation metric have you chosen? 
+   > 
+   - What evaluation metric have you chosen?
+   > Acuracy, precision, recall y F1-Score
    - Write down your training and testing accuracies.
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/models.PNG)
+
 5. **Final summary.** Write down what would you have done if we had given you more time and data.        
 
 ## 2nd problem. 
