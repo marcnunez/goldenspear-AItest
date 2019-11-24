@@ -61,9 +61,10 @@ def concat_tokens_from_rating(review_df):
 
 
 def print_frequencies(dict_ratings):
-    for i in range(1,6):
+    for i in range(1, 6):
         nlp = nltk.FreqDist(dict_ratings[i])
-        nlp.plot(20)
+        title = "Rating: " + str(i)
+        nlp.plot(5, title=title)
 
 
 def main():
