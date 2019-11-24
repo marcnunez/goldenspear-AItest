@@ -6,6 +6,14 @@ We are given a dataset that contains product reviews and a rating for each produ
 You can download the dataset from http://app.goldenspear.com/ratings.csv
 
 1. **Data analysis.** Plot the balance of classes and show the five most predominant words for each class.
+
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-1.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-2.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-3.PNG)
+   ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/Figure_1-4.PNG)
+
+
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
 > Se han quitado los numeros y los caracteres especiales, ademas de la puntuacion. Y una vez tokenizado el texto se han quitado los stop words. Ademas tambien se podria haber Lemmatizing para encontrar la palabra raiz y asi facilitar el agrupamiento de las palabras. Para esta tarea se han utilizado las librerias de Python de NLTK y de String
 3. **Learning process.** Answer briefly these questions:
