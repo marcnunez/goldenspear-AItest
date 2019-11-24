@@ -35,7 +35,7 @@ We are given a dataset that contains product reviews and a rating for each produ
    - Write down your training and testing accuracies.
    ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/models.PNG)
 5. **Final summary.** Write down what would you have done if we had given you more time and data.
-    > Use deep learning networks such as transofmer structures such as BERT that can be fine tuned for a variety of classic NLP tasks. Besides, bert is already pretrained.
+    > Use deep learning networks with transofmer structures such as BERT that can be fine tuned for a variety of classic NLP tasks. Besides, BERT is already pretrained.
     
 ## 2nd problem. 
 We are given a dataset that contains an unlabelled set of images and a smaller dataset that contains labelled images. Those images represent shirts from an e-commerce, so usually the background is plain and the product is the focus of the image. The unlabelled dataset provided contains 5K samples and the labelled one contains just 10 images, all of blue shirts. 
