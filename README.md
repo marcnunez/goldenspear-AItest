@@ -34,11 +34,11 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 1. **Problem analysis.** Write down your solution proposal .
 
 > /src/blue_shirts_detector.py
-   1. Regions of interest have been taken out. 
-   2. These regions have been switched to HSV colour space and only the Hue channel has been selected.
-   3. The histogram has been taken from the blue images. 
-   4. It has been compared the histograms of each one of the images of train with each one of the images of blue shirts. If it has an intersect superior to 2100 it has been considered blue. 
-   5. The results have been plotted
+   - Regions of interest have been taken out. 
+   - These regions have been switched to HSV colour space and only the Hue channel has been selected.
+   - The histogram has been taken from the blue images. 
+   - It has been compared the histograms of each one of the images of train with each one of the images of blue shirts. If it has an intersect superior to 2100 it has been considered blue. 
+   - The results have been plotted
 
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > A way to visualize the results without having validation, can be with the visual check of grids of small images of those in which it has succeeded. Being the smallest dataset, it could be a simple way to check that there are no False Positives. 
