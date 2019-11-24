@@ -35,7 +35,7 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 > /src/blue_shirts_detector.py
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > Una manera de visualizar los resultados sin tener validacion, puede ser con la comprovacion visual de grids de imagenes pequeñas de esos en los que ha acertado. Siendo el dataset mas reducido, podria ser una manera sencialla de comprovar que no haya Falsos Positivos. 
-
+<img src="https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG" width="425"/> <img src="https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG" width="425"/> 
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/1_100_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/101_200_blue.PNG)
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/201_300_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/301_400_blue.PNG)
 ![alt text-1](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/401_500_blue.PNG) ![alt text-2](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/501_600_blue.PNG)
