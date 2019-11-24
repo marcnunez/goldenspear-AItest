@@ -10,7 +10,7 @@ from src import memory
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 import numpy as np
-
+import nltk
 
 def read_csv(path: str)->pd.DataFrame:
     df = pd.read_csv(path)
@@ -54,16 +54,20 @@ def remove_stop_words(review_df: pd.DataFrame)->pd.DataFrame:
     return review_df
 
 
-def one_hot_encoder(review_df: pd.DataFrame):
-    values = np.array(review_df['TEXT'])
+def concat_tokens_from_rating(review_df):
+    data = {k: [] for k in range(1,6)}
+    dict_text = {
+        1:[],2:[],3:[],4:[],5:[]
+    }
+    for row, col in review_df.iterrows():
+        dict_text[col['RATING']] = dict_text[col['RATING']] + col['TEXT']
+    return dict_text
 
-def get_top_n_words(corpus, n=None):
-    vec = CountVectorizer().fit(corpus)
-    bag_of_words = vec.transform(corpus)
-    sum_words = bag_of_words.sum(axis=0)
-    words_freq = [(word, sum_words[0, idx]) for word, idx in vec.vocabulary_.items()]
-    words_freq = sorted(words_freq, key=lambda x: x[1], reverse=True)
-    return words_freq[:n]
+
+def print_frequencies(dict_ratings):
+    for i in range(1,6):
+        nlp = nltk.FreqDist(dict_ratings[i])
+        nlp.plot(20)
 
 
 def main():
@@ -72,15 +76,17 @@ def main():
     review_df = read_csv(in_path)
     print(np.unique(review_df['RATING'], return_counts=True))
 
-    review_df = clean_text(review_df)
-    review_df = tokenizer(review_df)
+    before_token = clean_text(review_df)
+    review_df = tokenizer(before_token)
     review_df = remove_stop_words(review_df)
     print(review_df.head())
 
+    dict_ratings = concat_tokens_from_rating(review_df)
+    print_frequencies(dict_ratings)
 
 
-    X = review_df['TEXT']
-    y = review_df['RATING']
+    X = before_token['TEXT']
+    y = before_token['RATING']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     sgd = Pipeline([('vect', CountVectorizer()),
