@@ -48,12 +48,10 @@ We would like you to analyse the datasets and build a model that is able to retr
 
 1. **Problem analysis.** Write down your solution proposal .
 
-> /src/blue_shirts_detector.py
-   - Regions of interest have been taken out. 
-   - These regions have been switched to HSV colour space and only the Hue channel has been selected.
-   - The histogram has been taken from the blue images. 
-   - It has been compared the histograms of each one of the images of train with each one of the images of blue shirts. If it has an intersect superior to 2100 it has been considered blue. 
-   - The results have been plotted
+- A region of interest has been defined in the middle area of the images, which corresponds to location the t-shirt in the images.
+- The region of interest in each imge has been used to define a descriptor: the histogram of the hue channel (HSV colour space).
+- The histogram of each train image has been compared (intersection method) to each of the pre-computed histograms of blue shirts. A threshold has been set by trail and error.
+- The results have been plotted
 
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > A way to visualize the results without having validation, can be with the visual check of grids of small images of those in which it has succeeded. Being the smallest dataset, it could be a simple way to check that there are no False Positives. 
