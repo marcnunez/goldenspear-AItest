@@ -62,8 +62,8 @@ We would like you to analyse the datasets and build a model that is able to retr
 
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
-> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learnign can make it increase its effectiveness. 
-On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Scikit-learn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue T-shirt dataset, to identify those regions of points that belong to the target cluster. You can use the same input features as the proposed exercise. Histograms of the Regions of Interest of the Hue channel of the HSV color space.
+> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning make it increase its effectiveness. 
+On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Scikit-learn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue shirt dataset identify those regions of points that belong to the target cluster. The same input features can be used as the proposed in the code. 
 On the other hand, if more blue image datasets were available, it would be possible to train a CNN with the embedings of the input images. 
 
 
