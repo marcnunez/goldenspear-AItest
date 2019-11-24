@@ -16,7 +16,6 @@ def sgd_classifier(X, y):
                     ])
     sgd.fit(X_train, y_train)
 
-
     y_pred = sgd.predict(X_test)
 
     print('Linear SVM SGD accuracy %s' %accuracy_score(y_pred, y_test))
@@ -46,7 +45,6 @@ def log_regression(X, y):
                        ('clf', LogisticRegression(n_jobs=1, C=1e5)),
                        ])
     logreg.fit(X_train, y_train)
-
 
     y_pred = logreg.predict(X_test)
 

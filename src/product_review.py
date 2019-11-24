@@ -7,6 +7,8 @@ from nltk.corpus import stopwords
 import numpy as np
 import nltk
 from src import models
+import matplotlib.pyplot as plt
+
 
 def read_csv(path: str)->pd.DataFrame:
     df = pd.read_csv(path)
@@ -32,6 +34,7 @@ def clean_punctuation(review_text: str)->str:
     return review_text
 
 
+#Tokenize text
 @memory.cache()
 def tokenizer(review_df: pd.DataFrame)->pd.DataFrame:
     tokenizer = RegexpTokenizer(r'\w+')
@@ -67,20 +70,32 @@ def print_frequencies(dict_ratings):
         nlp.plot(5, title=title)
 
 
+def plot_balance_clases(dict_ratings):
+    lengths = []
+    for i in dict_ratings:
+        lengths.append(i)
+        print()
+
+
 def main():
     in_path = '../dataset/ratings.csv'
 
+    #Read CSV as Dataframe and show reviews by ratings
     review_df = read_csv(in_path)
     print(np.unique(review_df['RATING'], return_counts=True))
 
+    #Clean text and tokenize
     before_token = clean_text(review_df)
     review_df = tokenizer(before_token)
     review_df = remove_stop_words(review_df)
     print(review_df.head())
 
+    #Show class balance and the top 5 tokens by rating
     dict_ratings = concat_tokens_from_rating(review_df)
     print_frequencies(dict_ratings)
+    #plot_balance_clases(dict_ratings)
 
+    #Test some classification models.
     X = before_token['TEXT']
     y = before_token['RATING']
 
