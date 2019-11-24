@@ -7,12 +7,17 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
 
 1. **Data analysis.** Plot the balance of classes and show the five most predominant words for each class.
 2. **Data cleaning.** Have you performed data cleaning? If so, what kind of data cleaning and which tools have you used?
+> Se han quitado los numeros y los caracteres especiales, ademas de la puntuacion. Y una vez tokenizado el texto se han quitado los stop words. Ademas tambien se podria haber Lemmatizing para encontrar la palabra raiz y asi facilitar el agrupamiento de las palabras. Para esta tarea se han utilizado las librerias de Python de NLTK y de String
 3. **Learning process.** Answer briefly these questions:
    - What kind of features have you used?
+   > Se ha propuesto representar los tokens de las frases mediante one hot shot encodings. 
    - What model or models have you chosen? Why? 
+   > Se han provado SVM's entre otros
    - What libraries have you used?
+   > Mayormente Sklearn 
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
+   > Sobretodo Cross Validation
    - What evaluation metric have you chosen? 
    - Write down your training and testing accuracies.
 5. **Final summary.** Write down what would you have done if we had given you more time and data.        
