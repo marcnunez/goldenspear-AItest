@@ -11,6 +11,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 import numpy as np
 import nltk
+from src import models
 
 def read_csv(path: str)->pd.DataFrame:
     df = pd.read_csv(path)
@@ -84,23 +85,12 @@ def main():
     dict_ratings = concat_tokens_from_rating(review_df)
     print_frequencies(dict_ratings)
 
-
     X = before_token['TEXT']
     y = before_token['RATING']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-    sgd = Pipeline([('vect', CountVectorizer()),
-                    ('tfidf', TfidfTransformer()),
-                    ('clf',
-                     SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, random_state=42)),
-                    ])
-    sgd.fit(X_train, y_train)
-
-
-    y_pred = sgd.predict(X_test)
-
-    print('accuracy %s' %accuracy_score(y_pred, y_test))
-    print(classification_report(y_test, y_pred))
+    models.log_regression(X, y)
+    models.naive_bayes_classifier(X, y)
+    models.sgd_classifier(X, y)
 
 
 if __name__ == '__main__':
