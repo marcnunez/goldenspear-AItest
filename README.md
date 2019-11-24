@@ -14,12 +14,12 @@ You can download the dataset from http://app.goldenspear.com/ratings.csv
    - What model or models have you chosen? Why? 
    > Se han provado Linear SVM's, Logistics Regression, y Naive Bayes Classifier.
    - What libraries have you used?
-   > Python Pandas y numpy para representar la data y Sklearn para los modelos y la validacion. 
+   > Pre-Processing and cleaning of lenguage: NLTK and String. Descriptors: Pandas and Numpy. Models: Scikit-learn
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
    > 
    - What evaluation metric have you chosen?
-   > Acuracy, precision, recall y F1-Score
+   > Acuracy, precision, recall and F1-Score
    - Write down your training and testing accuracies.
    ![alt text](https://github.com/marcnunez/goldenspear-AItest/blob/master/results/models.PNG)
 
@@ -50,7 +50,7 @@ You can download the datasets from http://app.goldenspear.com/shirts.tar.gz
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
 > The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learnign can make it increase its effectiveness. 
-On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Sklearn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue T-shirt dataset, to identify those regions of points that belong to the target cluster. You can use the same input features as the proposed exercise. Histograms of the Regions of Interest of the Hue channel of the HSV color space.
+On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Scikit-learn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue T-shirt dataset, to identify those regions of points that belong to the target cluster. You can use the same input features as the proposed exercise. Histograms of the Regions of Interest of the Hue channel of the HSV color space.
 On the other hand, if more blue image datasets were available, it would be possible to train a CNN with the embedings of the input images. 
 
 
