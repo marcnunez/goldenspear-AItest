@@ -34,7 +34,7 @@ We are given a dataset that contains product reviews and a rating for each produ
    > Pre-Processing and cleaning of lenguage: NLTK. Data structures: Pandas and Numpy. Models and descirptors: Scikit-learn
 4. **Models validation.** Evaluate the performance of your estimator using some validation method and answer these questions:                    
    - What validation method have you chosen? 
-   > Cross Validation method has been implemented. The data has been split into training and testing sets, with 70% and 30% of the data respectively, keeping the data classes balanced for each set as shown in question 1.
+   > Cross Validation method has been implemented. The data has been split into training and testing sets, with 70% and 30% of the data respectively, keeping the data classes balanced for each set.
    - What evaluation metric have you chosen?
    > Acuracy, precision, recall and F1-Score
    - Write down your training and testing accuracies.
@@ -51,7 +51,7 @@ We would like you to analyse the datasets and build a model that is able to retr
 - A region of interest has been defined in the middle area of the images, which corresponds to location the t-shirt in the images.
 - The region of interest in each imge has been used to define a descriptor: the histogram of the hue channel (HSV colour space).
 - The histogram of each train image has been compared (intersection method) to each of the pre-computed histograms of blue shirts. A threshold has been set by trail and error.
-- The results have been plotted
+- The results have been plotted. From the original 5.000 training images 620 has been identified as blue shirts which you can see in the following question.
 
 2. **Models validation.** As we don’t have validation samples on the dataset, find a way to visually demonstrate the capacity of the model.
 > Since the dataser is not too large, a simple way to check that there are no False Positives is plotting the results in grids. The small images can be checked at a glance and we can visually determine if they really correspond to blue shirts.
@@ -63,10 +63,10 @@ We would like you to analyse the datasets and build a model that is able to retr
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
    
-   The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning can increase its effectiveness. 
+   > The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning can increase its effectiveness. 
 
-On the one hand, the same features proposed, histograms of the the Hue channel in the ROI, can be used as descriptors for machine learning solutions when few labelled data is provided. Clusters are found in the train data, then the blue T-shirt labeled data can identify the target cluster. It is possible to implement with a quantity of similar data using semi-supervised clustering methods,  with Scikit-learn libraries. Requires more time, resources and hyperparameter optimization.
+   > On the one hand, the same features proposed, histograms of the the Hue channel in the ROI, can be used as descriptors for machine learning solutions when few labelled data is provided. Clusters are found in the train data, then the blue T-shirt labeled data can identify the target cluster. It is possible to implement with a quantity of similar data using semi-supervised clustering methods,  with Scikit-learn libraries. Requires more time, resources and hyperparameter optimization.
 
-   On the other hand, if a larger labelled dataset was available, it would be possible to fine tune an existing CNN for the classification task.
+   > On the other hand, if a larger labelled dataset was available, it would be possible to fine tune an existing CNN for the classification task.
 
 
