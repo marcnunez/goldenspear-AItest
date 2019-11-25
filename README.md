@@ -62,8 +62,10 @@ We would like you to analyse the datasets and build a model that is able to retr
 
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
-> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning make it increase its effectiveness. 
-On the one hand it is possible to implement with a quantity of similar data semi-supervised clustering methods, where by making use of Scikit-learn libraries a clustering like Mean-Shift can be implemented, in such a way that it learns to differentiate between clusters of histograms automatically from the complete dataset without needing to indicate the number of existing classes, and then with the blue shirt dataset identify those regions of points that belong to the target cluster. The same input features can be used as the proposed in the code. 
-On the other hand, if we have more data, it would be possible to train a CNN with the embedings of the input images. 
+> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning can increase its effectiveness. 
+
+On the one hand, the same features proposed, histograms of the the Hue channel in the ROI, can be used as descriptors for machine learning solutions when few labelled data is provided. Clusters are found in the train data, then the blue T-shirt labeled data can identify the target cluster. It is possible to implement with a quantity of similar data semi-supervised clustering methods,  making use of Scikit-learn libraries. Requires more time, resources and hyperparameter optimization.
+
+On the other hand, if a larger labelled dataset was available, it would be possible to fine tune an existing CNN for the classification task.
 
 
