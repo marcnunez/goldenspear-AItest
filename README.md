@@ -62,10 +62,10 @@ We would like you to analyse the datasets and build a model that is able to retr
 
 
 3. **Final summary.** Write down what would you have done if we had given you more time and data.
-> The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning can increase its effectiveness. 
+   The version implemented with the comparison of histograms is simple and efficient, however mechanisms of Machine Learning or Deep Learning can increase its effectiveness. 
 
-On the one hand, the same features proposed, histograms of the the Hue channel in the ROI, can be used as descriptors for machine learning solutions when few labelled data is provided. Clusters are found in the train data, then the blue T-shirt labeled data can identify the target cluster. It is possible to implement with a quantity of similar data semi-supervised clustering methods,  making use of Scikit-learn libraries. Requires more time, resources and hyperparameter optimization.
+On the one hand, the same features proposed, histograms of the the Hue channel in the ROI, can be used as descriptors for machine learning solutions when few labelled data is provided. Clusters are found in the train data, then the blue T-shirt labeled data can identify the target cluster. It is possible to implement with a quantity of similar data using semi-supervised clustering methods,  with Scikit-learn libraries. Requires more time, resources and hyperparameter optimization.
 
-On the other hand, if a larger labelled dataset was available, it would be possible to fine tune an existing CNN for the classification task.
+   On the other hand, if a larger labelled dataset was available, it would be possible to fine tune an existing CNN for the classification task.
 
 
